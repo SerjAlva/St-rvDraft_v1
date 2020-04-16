@@ -194,11 +194,11 @@ public class AdaptadorPlatillo extends RecyclerView.Adapter<AdaptadorPlatillo.My
         DecimalFormat df2 = new DecimalFormat("#.00");
 
 
-        if(getItemCount()>MAX_ITEMS && i < 3){
+        /*if(getItemCount()>MAX_ITEMS && i < 3){
             ViewGroup.LayoutParams ivParams = myViewHolder.imageView.getLayoutParams();
             ivParams.height -=80;
             myViewHolder.imageView.setLayoutParams(ivParams);
-        }
+        }*/
 
         myViewHolder.titulo.setText(informacion.get(i).titulo);
         myViewHolder.precio.setText("$" + df2.format(informacion.get(i).precioMostrador));
